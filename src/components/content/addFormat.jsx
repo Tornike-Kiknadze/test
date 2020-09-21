@@ -1,5 +1,7 @@
 import React from "react";
 import "../../App.css";
+import check from "../content/assets/check.svg";
+import arrow from "../content/assets/down-arrow.png";
 
 function AddFormat() {
   return (
@@ -10,20 +12,49 @@ function AddFormat() {
       </div>
       <div className="content-format__content">
         <div className="content-format__content__snippet">
-          <p>Create Campaign</p>
-          <span> done</span>
+          <div>
+            {" "}
+            <p>Create Campaign</p>
+            <img src={arrow} alt="" />
+          </div>
+
+          <span>
+            {" "}
+            <img src={check} alt="" />
+            Done
+          </span>
         </div>
         <div className="content-format__content__snippet">
-          <p>Choose Audience </p>
-          <span> done</span>
+          <div>
+            <p>Choose Audience </p>
+            <img src={arrow} alt="" />
+          </div>
+
+          <span>
+            {" "}
+            <img src={check} alt="" />
+            Done
+          </span>
         </div>
         <div className="content-format__content__snippet">
-          <p> Choose Budget & Dates</p>
-          <span> done</span>
+          <div>
+            <p id="budget-dates"> Choose Budget & Dates</p>
+            <img src={arrow} alt="" />
+          </div>
+
+          <span>
+            {" "}
+            <img src={check} alt="" />
+            Done
+          </span>
         </div>
         <div className="content-format__content__snippet">
-          <p>Generate Ad Media</p>
-          <span> done</span>
+          <div>
+            <p>Generate Ad Media</p>
+            <img src={arrow} alt="" />
+          </div>
+
+          <span className="last-span">Process</span>
         </div>
       </div>
     </div>

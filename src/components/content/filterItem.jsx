@@ -41,11 +41,13 @@ export default function OutlinedChips() {
         avatar={<Avatar src={facebook} />}
         label="Facebook"
         variant="outlined"
+        alt="facebook"
         onClick={handleClick}
       />
       <Chip
         avatar={<Avatar src={google} />}
         label="Google"
+        alt="google"
         variant="outlined"
         onClick={handleClick}
       />

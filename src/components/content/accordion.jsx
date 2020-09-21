@@ -7,6 +7,7 @@ import Typography from "@material-ui/core/Typography";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import facebook from "./assets/facebook.png";
 import google from "./assets/google.png";
+import arrow from "./assets/down-arrow.png";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -86,7 +87,7 @@ export default function SimpleAccordion() {
                 <p>Period</p>
                 <p>09/12/2019 - 08/11/2020</p>
               </div>
-              <div>
+              <div className="facebook-google__wrapper">
                 <img src={facebook} alt="" />
                 <img src={google} alt="" />{" "}
               </div>
@@ -96,7 +97,11 @@ export default function SimpleAccordion() {
                 <p>Choose budget</p>
                 <p>400.00 $</p>
               </div>
-              <div>
+              <div className="budget-div">
+                <p>$ Dollar </p>
+                <img src={arrow} alt="" />
+              </div>
+              <div className="facebook-google__wrapper">
                 <img src={facebook} alt="" />
                 <img src={google} alt="" />{" "}
               </div>
@@ -106,7 +111,8 @@ export default function SimpleAccordion() {
                 <p>Choose When You Are charged</p>
                 <p>On Impression</p>
               </div>
-              <div>
+
+              <div className="facebook-google__wrapper">
                 <img src={facebook} alt="" />
                 <img src={google} alt="" />{" "}
               </div>
